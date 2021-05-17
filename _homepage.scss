@@ -1,0 +1,21 @@
+.section {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  // Proměnná barvy z _global_scss
+  background-color: $second-color;
+  p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 400px;
+    background-color: #ffffff;
+
+    // Vloženo ze souboru _mixins.scss
+    // Parametr funkce je velikost radiusu rámečku
+    @include shadow_border(20px);
+  }
+}
